@@ -9,4 +9,7 @@ import com.BikkadIT.entity.UserMasterEntity;
 @Repository
 public interface UserRepository extends JpaRepository<UserMasterEntity, Serializable> {
 
+	
+	public UserMasterEntity findByEmailAndPassword(String email, String password);
+	
 }
